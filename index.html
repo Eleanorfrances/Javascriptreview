@@ -7,19 +7,22 @@
     </head>
     <body>
         <header>
-            <div class="h1">Java Script Review!</div>
+            <h1>Java Script Review!</h1>
             <button class="start-button">Start Review!</button>
+            <div class="question-container"></div>
+            <div id="answers"></div>
         </header>
 
     <main>
         <section>
-            <div class="card results">
-            <div class="win-loss-container">
-             <div>
-                <h2>Wins: <span class="win">0 </span> </h2>
-                <h2>Losses: <span class="lose">0</span></h2>  
-              </div>
-            <button class="reset-button">Reset Score</button>
+            <div class="results-container">
+            <h2> Results</h2>
+            <p> Your score: <span id="score"></span></p>
+            <form>
+                <label for="initials"> Type your initials:</label>
+                <input type="text" id="initials" name="initials" maxlength="3">
+                <button class= "submit">Submit</button>
+            </form>
         </div>
             <div class = "card timer">
             <div class = "timer-text">
